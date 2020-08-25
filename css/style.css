@@ -79,7 +79,6 @@ body {
 
 .page-wrapper .content-1 p {
   margin: 20px 0;
-  text-align: justify;
   color: #9698a6;
 }
 
@@ -89,4 +88,12 @@ body {
   border: none;
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
+}
+
+.page-wrapper .why-choose-easybank {
+  text-align: center;
+}
+
+.page-wrapper .easybank-features .online-banking, .page-wrapper .easybank-features .simple-budgeting, .page-wrapper .easybank-features .onboarding, .page-wrapper .easybank-features .open-api {
+  text-align: center;
 }

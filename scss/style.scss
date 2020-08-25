@@ -4,12 +4,12 @@ $lime-green: hsl(136, 65%, 51%);
 $bright-cyan: hsl(192, 70%, 51%);
 // Neutral Colors
 $grayish-blue: hsl(233, 8%, 62%);
-$light-grayish-blue:hsl(220, 16%, 96%);
-$very-light-grey:  hsl(0, 0%, 98%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-grey: hsl(0, 0%, 98%);
 //Font-size
 $font-size: 18px;
 //Font
-$primary-font: 'Public Sans', sans-serif;
+$primary-font: "Public Sans", sans-serif;
 
 * {
   margin: 0;
@@ -23,8 +23,7 @@ $primary-font: 'Public Sans', sans-serif;
   justify-content: space-around;
   align-items: center;
 }
-body
-{
+body {
   overflow-x: hidden;
 }
 .mobile-nav {
@@ -75,33 +74,42 @@ body
       width: 100%;
     }
   }
-  .content-1
-  {
-   text-align: center;
+  .content-1 {
+    text-align: center;
     padding: 5px 100px;
     width: 100%;
-   h1
-   {
-     font-weight: 400;
-     font-size: 3rem;
-   }
-     p
-  {
-    margin: 20px 0; 
-    text-align: justify;
-    color: $grayish-blue;
-    
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+    }
+    p {
+      margin: 20px 0;
+      // text-align: justify;
+      color: $grayish-blue;
+    }
+    .request-invite-btn {
+      border-radius: 20px;
+      padding: 15px 40px;
+      border: none;
+      background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+      color: white;
+    }
   }
-  .request-invite-btn
-  {
-    border-radius: 20px;
-    padding: 15px 40px;
-    border: none;
-    background-image: linear-gradient(to right, $lime-green, $bright-cyan);
-    color: white;
+  .why-choose-easybank {
+    text-align: center;
   }
+  .easybank-features {
+    .online-banking {
+      text-align: center;
+    }
+    .simple-budgeting {
+      @extend .online-banking;
+    }
+    .onboarding {
+      @extend .online-banking;
+    }
+    .open-api {
+      @extend .online-banking;
+    }
   }
- 
-
-
 }
