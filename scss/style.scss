@@ -81,6 +81,7 @@ body {
     h1 {
       font-weight: 400;
       font-size: 3rem;
+      color: $dark-blue;
     }
     p {
       margin: 20px 0;
@@ -97,10 +98,31 @@ body {
   }
   .why-choose-easybank {
     text-align: center;
+    margin-top: 150px;
+    padding: 0 50px;
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $dark-blue;
+    }
+    p {
+      margin-top: 20px;
+      color: $grayish-blue;
+    }
   }
   .easybank-features {
     .online-banking {
       text-align: center;
+      margin-top: 50px;
+      padding: 0 50px;
+      h3 {
+        font-weight: 500;
+        color: $dark-blue;
+      }
+      p {
+        margin-top: 20px;
+        color: $grayish-blue;
+      }
     }
     .simple-budgeting {
       @extend .online-banking;
@@ -110,6 +132,98 @@ body {
     }
     .open-api {
       @extend .online-banking;
+    }
+  }
+
+  .latest-articles {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 100px;...........................................
+    h2{
+      color: $dark-blue;
+      font-weight: 500;
+      font-size: 2rem;
+    }
+    
+    
+    .articles {
+     text-align: center;
+     margin: 25px 0;
+     article{
+         margin-top: 3 5px;
+      img
+         {
+           width: 90%;
+         }
+      .article-caption
+      {
+        text-align: left;
+        padding: 25px 35px;
+        .author
+        {
+          color: $grayish-blue;
+        }
+        h4{
+          color: $dark-blue;
+          margin: 15px 0;
+          font-weight: 500;
+        }
+        p{
+          color: $grayish-blue;
+        }
+      }   
+     }
+    
+    }
+    
+  }
+
+  footer {
+    background-color: $dark-blue;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: 500px;
+
+    @include flexbox();
+    flex-direction: column;
+    .logo {
+      img
+      {
+        fill: white;
+      }
+    }
+    .socials {
+      img {
+        width: 30px;
+        margin-left: 10px;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        margin-top: 20px;
+      }
+      li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+    }
+    .request-btn {
+      border-radius: 20px;
+      padding: 15px 40px;
+      border: none;
+      background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+      color: white;
+      margin-top: 20px;
+    }
+    .rights-reserved {
+      color: $grayish-blue;
+      font-size: 0.9rem;
     }
   }
 }

@@ -75,6 +75,7 @@ body {
 .page-wrapper .content-1 h1 {
   font-weight: 400;
   font-size: 3rem;
+  color: #2d314d;
 }
 
 .page-wrapper .content-1 p {
@@ -92,8 +93,125 @@ body {
 
 .page-wrapper .why-choose-easybank {
   text-align: center;
+  margin-top: 150px;
+  padding: 0 50px;
+}
+
+.page-wrapper .why-choose-easybank h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2d314d;
+}
+
+.page-wrapper .why-choose-easybank p {
+  margin-top: 20px;
+  color: #9698a6;
 }
 
 .page-wrapper .easybank-features .online-banking, .page-wrapper .easybank-features .simple-budgeting, .page-wrapper .easybank-features .onboarding, .page-wrapper .easybank-features .open-api {
   text-align: center;
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+.page-wrapper .easybank-features .online-banking h3, .page-wrapper .easybank-features .simple-budgeting h3, .page-wrapper .easybank-features .onboarding h3, .page-wrapper .easybank-features .open-api h3 {
+  font-weight: 500;
+  color: #2d314d;
+}
+
+.page-wrapper .easybank-features .online-banking p, .page-wrapper .easybank-features .simple-budgeting p, .page-wrapper .easybank-features .onboarding p, .page-wrapper .easybank-features .open-api p {
+  margin-top: 20px;
+  color: #9698a6;
+}
+
+.page-wrapper .latest-articles {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.page-wrapper .latest-articles h2 {
+  color: #2d314d;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.page-wrapper .latest-articles .articles {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.page-wrapper .latest-articles .articles article {
+  margin-top: 3 5px;
+}
+
+.page-wrapper .latest-articles .articles article img {
+  width: 90%;
+}
+
+.page-wrapper .latest-articles .articles article .article-caption {
+  text-align: left;
+  padding: 25px 35px;
+}
+
+.page-wrapper .latest-articles .articles article .article-caption .author {
+  color: #9698a6;
+}
+
+.page-wrapper .latest-articles .articles article .article-caption h4 {
+  color: #2d314d;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.page-wrapper .latest-articles .articles article .article-caption p {
+  color: #9698a6;
+}
+
+.page-wrapper footer {
+  background-color: #2d314d;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-wrapper footer .socials img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.page-wrapper footer ul {
+  list-style-type: none;
+}
+
+.page-wrapper footer ul li {
+  margin-top: 20px;
+}
+
+.page-wrapper footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.page-wrapper footer .request-btn {
+  border-radius: 20px;
+  padding: 15px 40px;
+  border: none;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  margin-top: 20px;
+}
+
+.page-wrapper footer .rights-reserved {
+  color: #9698a6;
+  font-size: 0.9rem;
 }
