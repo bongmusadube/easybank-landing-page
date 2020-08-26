@@ -16,7 +16,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  max-width: 100%;
   width: 100%;
   padding: 0 25px;
   z-index: 3;
@@ -36,11 +35,13 @@ body {
   z-index: 10;
   top: 80px;
   width: 90%;
-  height: 200px;
+  height: 350px;
   margin: 0 auto;
   background-color: white;
   list-style-type: none;
   visibility: hidden;
+  box-shadow: 0 150px 1000px;
+  border-radius: 2%;
 }
 
 .mobile-nav ul li a {
@@ -52,13 +53,13 @@ body {
   width: 100%;
 }
 
-.page-wrapper .mock-up .bg-mobile {
+.page-wrapper .bg .bg-mobile {
   top: 0;
   width: 100%;
   max-width: 100%;
 }
 
-.page-wrapper .mock-up .mock-up {
+.page-wrapper .bg .mock-up {
   z-index: 2;
   position: absolute;
   top: -70px;
@@ -181,6 +182,10 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+}
+
+.page-wrapper footer .logo img {
+  fill: white;
 }
 
 .page-wrapper footer .socials img {

@@ -30,7 +30,7 @@ body {
   @include flexbox();
   justify-content: space-between;
   height: 70px;
-  max-width: 100%;
+  // max-width: 100%;
   width: 100%;
   padding: 0 25px;
   z-index: 3;
@@ -46,11 +46,13 @@ body {
     z-index: 10;
     top: 80px;
     width: 90%;
-    height: 200px;
+    height: 350px;
     margin: 0 auto;
     background-color: white;
     list-style-type: none;
     visibility: hidden;
+    box-shadow: 0 150px 1000px;
+    border-radius: 2%;
     li a {
       text-decoration: none;
       color: black;
@@ -58,9 +60,11 @@ body {
   }
 }
 .page-wrapper {
+  //  max-width: 100%;
   width: 100%;
 
-  .mock-up {
+
+  .bg {
     .bg-mobile {
       top: 0;
       width: 100%;
@@ -140,7 +144,7 @@ body {
     margin: 0 auto;
     text-align: center;
     margin-top: 200px;
-    margin-bottom: 100px;...........................................
+    margin-bottom: 100px;
     h2{
       color: $dark-blue;
       font-weight: 500;
