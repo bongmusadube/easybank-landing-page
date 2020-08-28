@@ -49,6 +49,10 @@ body {
   color: black;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 .page-wrapper {
   width: 100%;
 }
@@ -57,6 +61,10 @@ body {
   top: 0;
   width: 100%;
   max-width: 100%;
+}
+
+.page-wrapper .bg .bg-desktop {
+  display: none;
 }
 
 .page-wrapper .bg .mock-up {
@@ -219,4 +227,81 @@ body {
 .page-wrapper footer .rights-reserved {
   color: #9698a6;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    z-index: 50;
+  }
+  .desktop-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .desktop-nav ul li {
+    margin-left: 50px;
+  }
+  .desktop-nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .desktop-nav ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    position: relative;
+    top: 36px;
+    transition: width .5s ease-in-out;
+  }
+  .desktop-nav ul li:hover::after {
+    width: 100%;
+  }
+  .desktop-nav .request-invite-btn {
+    border-radius: 20px;
+    padding: 15px 40px;
+    border: none;
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    color: white;
+    font-size: 1.2rem;
+  }
+  .page-wrapper .bg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .page-wrapper .bg .bg-desktop {
+    display: block;
+    position: relative;
+    top: -100px;
+    right: -50vh;
+    z-index: 1;
+    position: relative;
+    top: 0;
+  }
+  .page-wrapper .bg .bg-mobile {
+    display: none;
+  }
+  .page-wrapper .bg .mock-up {
+    width: 42%;
+    position: absolute;
+    top: 150px;
+    left: 1300px;
+    z-index: 20;
+  }
 }
