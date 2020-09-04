@@ -76,7 +76,7 @@ body {
 }
 
 .page-wrapper .content-1 {
-  text-align: center;
+  text-align: left;
   padding: 5px 100px;
   width: 100%;
 }
@@ -179,7 +179,7 @@ body {
   color: #9698a6;
 }
 
-.page-wrapper footer {
+.mobile-footer {
   background-color: #2d314d;
   text-align: center;
   width: 90%;
@@ -192,30 +192,30 @@ body {
   flex-direction: column;
 }
 
-.page-wrapper footer .logo img {
+.mobile-footer .logo img {
   fill: white;
 }
 
-.page-wrapper footer .socials img {
+.mobile-footer .socials img {
   width: 30px;
   margin-left: 10px;
 }
 
-.page-wrapper footer ul {
+.mobile-footer ul {
   list-style-type: none;
 }
 
-.page-wrapper footer ul li {
+.mobile-footer ul li {
   margin-top: 20px;
 }
 
-.page-wrapper footer ul li a {
+.mobile-footer ul li a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
 }
 
-.page-wrapper footer .request-btn {
+.mobile-footer .request-btn {
   border-radius: 20px;
   padding: 15px 40px;
   border: none;
@@ -224,9 +224,13 @@ body {
   margin-top: 20px;
 }
 
-.page-wrapper footer .rights-reserved {
+.mobile-footer .rights-reserved {
   color: #9698a6;
   font-size: 0.9rem;
+}
+
+.desktop-footer {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -238,10 +242,16 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: absolute;
+    left: 0;
     width: 100%;
     height: 100px;
     flex-direction: row;
-    z-index: 50;
+    z-index: 1200;
+    background: white;
+  }
+  .desktop-nav .logo img {
+    width: 200px;
   }
   .desktop-nav ul {
     list-style-type: none;
@@ -254,7 +264,8 @@ body {
   }
   .desktop-nav ul li a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    color: #9698a6;
   }
   .desktop-nav ul li::after {
     content: "";
@@ -264,7 +275,7 @@ body {
     background: linear-gradient(to right, #31d35c, #2bb7da);
     position: relative;
     top: 36px;
-    transition: width .5s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .desktop-nav ul li:hover::after {
     width: 100%;
@@ -277,6 +288,9 @@ body {
     color: white;
     font-size: 1.2rem;
   }
+  .page-wrapper {
+    padding: 0px 100px;
+  }
   .page-wrapper .bg {
     display: flex;
     justify-content: space-around;
@@ -287,21 +301,157 @@ body {
   }
   .page-wrapper .bg .bg-desktop {
     display: block;
-    position: relative;
-    top: -100px;
-    right: -50vh;
+    width: 20000px;
+    top: -15vh;
+    right: -10vh;
     z-index: 1;
     position: relative;
-    top: 0;
   }
   .page-wrapper .bg .bg-mobile {
     display: none;
   }
   .page-wrapper .bg .mock-up {
-    width: 42%;
+    width: 60%;
     position: absolute;
-    top: 150px;
-    left: 1300px;
+    top: -50px;
+    left: 70vw;
     z-index: 20;
+  }
+  .page-wrapper .bg .content-1 {
+    margin-left: 600px;
+  }
+  .page-wrapper .bg .content-1 h1 {
+    font-size: 5rem;
+    text-align: left;
+    width: 600px;
+  }
+  .page-wrapper .bg .content-1 p {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .page-wrapper .bg .content-1 .request-invite-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+  .page-wrapper .why-choose-easybank {
+    text-align: left;
+    margin-left: 150px;
+  }
+  .page-wrapper .why-choose-easybank h2 {
+    font-size: 5rem;
+  }
+  .page-wrapper .why-choose-easybank p {
+    font-size: 1.5rem;
+  }
+  .page-wrapper .easybank-features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: 150px;
+  }
+  .page-wrapper .easybank-features .online-banking img, .page-wrapper .easybank-features .simple-budgeting img, .page-wrapper .easybank-features .onboarding img, .page-wrapper .easybank-features .open-api img {
+    width: 100px;
+  }
+  .page-wrapper .easybank-features .online-banking h3, .page-wrapper .easybank-features .simple-budgeting h3, .page-wrapper .easybank-features .onboarding h3, .page-wrapper .easybank-features .open-api h3 {
+    font-size: 2.5rem;
+    margin: 50px 0;
+  }
+  .page-wrapper .easybank-features p {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .page-wrapper .latest-articles {
+    text-align: left;
+  }
+  .page-wrapper .latest-articles h2 {
+    font-size: 4rem;
+  }
+  .page-wrapper .latest-articles .articles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .page-wrapper .latest-articles .articles img {
+    width: 100%;
+    height: 250px;
+  }
+  .page-wrapper .latest-articles .articles h6 {
+    font-size: 1.2rem;
+  }
+  .page-wrapper .latest-articles .articles h4 {
+    font-size: 2rem;
+  }
+  .page-wrapper .latest-articles .articles p {
+    font-size: 1.5rem;
+  }
+  .page-wrapper .latest-articles .articles .restaurant-article img {
+    margin-top: 65px;
+    width: 100%;
+  }
+  .page-wrapper .latest-articles .articles .confetti-article img {
+    margin-top: 65px;
+    width: 100%;
+  }
+  .mobile-footer {
+    display: none;
+  }
+  .desktop-footer {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: #2d314d;
+  }
+  .desktop-footer .logo-and-socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop-footer .logo-and-socials .logo img {
+    width: 200px;
+  }
+  .desktop-footer .logo-and-socials .socials {
+    margin-top: 100px;
+  }
+  .desktop-footer .logo-and-socials .socials img {
+    width: 30px;
+    margin-left: 15px;
+  }
+  .desktop-footer .nav-links-1 a, .desktop-footer .nav-links-2 a {
+    color: #f3f4f6;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop-footer .request-btn-and-rights {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop-footer .request-btn-and-rights .request-btn {
+    border-radius: 20px;
+    padding: 15px 40px;
+    border: none;
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    color: white;
+    font-size: 1.2rem;
+  }
+  .desktop-footer .request-btn-and-rights span {
+    margin-top: 20px;
+    color: #9698a6;
+    font-size: 1.2rem;
   }
 }
