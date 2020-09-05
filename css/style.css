@@ -34,19 +34,43 @@ body {
   justify-content: space-evenly;
   z-index: 10;
   top: 80px;
-  width: 90%;
-  height: 350px;
-  margin: 0 auto;
+  width: 90vw;
+  height: 60vh;
   background-color: white;
   list-style-type: none;
-  visibility: hidden;
+  transform: translateX(150%);
   box-shadow: 0 150px 1000px;
   border-radius: 2%;
+  transition: transform .5s ease-in;
 }
 
 .mobile-nav ul li a {
   text-decoration: none;
   color: black;
+}
+
+.mobile-nav .menu-open {
+  transform: translateX(0);
+}
+
+.mobile-nav .menu-icon div {
+  width: 40px;
+  height: 3px;
+  background: #2D314D;
+  margin-top: 5px;
+  transition: all .5s ease-in;
+}
+
+.mobile-nav .burger-toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-nav .burger-toggle .line2 {
+  opacity: 0;
+}
+
+.mobile-nav .burger-toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .desktop-nav {
@@ -73,6 +97,7 @@ body {
   top: -70px;
   left: 0;
   width: 100%;
+  transition: transform .5s ease-in;
 }
 
 .page-wrapper .content-1 {

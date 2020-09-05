@@ -1,18 +1,19 @@
-let menu = document.querySelector(".menu-icon");
-let menuIcon = document.querySelector(".menu-icon img");
-let mobileNav = document.querySelector(".mobile-nav ul");
-let mockUp = document.querySelector(".mock-up");
-console.log(mockUp);
-menu.addEventListener("click", () => {
-  menuIcon.classList.toggle("menu-open");
-  if (menuIcon.classList.contains("menu-open")) {
-    mobileNav.style.visibility = "visible";
-    menuIcon.src = "./images/icon-close.svg";
-    mockUp.style.visibility = "hidden";
-  } else {
-    mobileNav.style.visibility = "hidden";
-    menuIcon.src = "./images/icon-hamburger.svg";
-    mockUp.style.visibility = "visible";
-  }
-   
-});
+const menuFunction = () => {
+  const menu = document.querySelector(".mobile-nav .menu-icon");
+  const mobileNav = document.querySelector(".mobile-nav ul");
+  const mockUp = document.querySelector(".mock-up");
+  menu.addEventListener("click", () => {
+    //hamburger animation
+    menu.classList.toggle("burger-toggle");
+    //Nav animation
+    mobileNav.classList.toggle("menu-open");
+    //MockUp
+    if (mobileNav.classList.contains("menu-open")) {
+      mockUp.style.transform = "translateX(-100%)";
+      
+    } else {
+      mockUp.style.transform = "translateX(0)";
+    }
+  });
+};
+menuFunction();
